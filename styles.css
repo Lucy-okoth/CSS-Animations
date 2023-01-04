@@ -1,0 +1,15 @@
+body{
+    background-color: lightblue;
+    text-align: center;
+
+}
+
+.wrapper{
+    width: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+img{
+    transform: translate(-200px, );
+}
