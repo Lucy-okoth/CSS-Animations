@@ -73,12 +73,15 @@ html, body{
     position: absolute;
     top: -40px;
     left: 0px;
-    animation-name: drive;
+    /* animation-name: drive;
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     /* animation-delay: 2s; */
-    animation-timing-function: /*cubic-bezier(0, .77, 1, .28)*/ linear;
+    /* animation-timing-function: cubic-bezier(0, .77, 1, .28) linear,  */
+      /* jump 0.3s 1.2s ease */ 
+      animation: drive 3S both infinite linear,
+        jump 0.3s 1.2s ease;
 }
 
 
@@ -123,4 +126,10 @@ html, body{
 @keyframes wind{
     from{left: -300px;}
     to{left: 100px}
+}
+
+@keyframes jump{
+    0%{top: -40px;}
+    50%{top: -100px}
+    100%{top: -40px}
 }
