@@ -75,11 +75,14 @@ html, body{
     left: 0px;
     animation-name: drive;
     animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
 }
 
 /* keyframes */
 
 @keyframes drive{
-    from{transform: translateX(0);}
-    to{transform: translate(700px);}
+    from{transform: translateX(-200px);}
+    to{transform: translate(1000px);}
 }
